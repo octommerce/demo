@@ -1,0 +1,3 @@
+[submodule "plugins/octommerce/octommerce"]
+	path = plugins/octommerce/octommerce
+	url = https://github.com/octommerce/octommerce.git

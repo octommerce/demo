@@ -1,0 +1,37 @@
+[viewBag]
+
+[staticMenu mainMenu]
+code = "main-menu"
+
+==
+<header class="navbar-fixed-top navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<a class="navbar-brand" href="{{ 'home'|page }}">
+				{{ this.theme.site_name }}
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-left">
+				{% partial "mainMenu::items" items=mainMenu.menuItems %}
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="{{ 'cart'|page }}">
+						<i class="fa fa-shopping-cart"></i> Cart
+						<span class="badge cart-counter">{{ cart.cart.count_qty }}</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

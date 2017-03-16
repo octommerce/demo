@@ -1,0 +1,15 @@
+title = "Payment"
+url = "/checkout/payment/:hash"
+layout = "default"
+is_hidden = 0
+
+[payment]
+hash = "{{ :hash }}"
+invoicePage = 404
+==
+<div class="container">
+    <div class="page-header">
+        <h1>Payment</h1>
+    </div>
+    {% component 'payment' %}
+</div>

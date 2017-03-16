@@ -1,1 +1,1 @@
-# demo
+# Octommerce Sample Project

@@ -1,0 +1,15 @@
+title = "Checkout"
+url = "/checkout"
+layout = "default"
+is_hidden = 0
+
+[checkout]
+redirectPage = "checkout/payment"
+
+==
+<div class="container">
+    <div class="page-header">
+        <h1>Checkout</h1>
+    </div>
+    {% component 'checkout' %}
+</div>

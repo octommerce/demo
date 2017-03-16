@@ -1,0 +1,17 @@
+title = "Invoice"
+url = "/checkout/invoice/:id"
+layout = "default"
+is_hidden = 0
+
+[invoice]
+id = "{{ :id }}"
+payPage = "checkout/payment"
+isPrimary = 1
+==
+
+<div class="container">
+    <div class="page-header">
+        <h1>Invoice</h1>
+    </div>
+    {% component 'invoice' %}
+</div>

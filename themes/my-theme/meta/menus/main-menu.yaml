@@ -1,0 +1,24 @@
+name: 'Main Menu'
+items:
+    -
+        title: Home
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: home
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: Products
+        type: cms-page
+        code: ''
+        reference: products/index
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
