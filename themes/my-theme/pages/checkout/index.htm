@@ -6,10 +6,28 @@ is_hidden = 0
 [checkout]
 redirectPage = "checkout/payment"
 
+[couponValidator]
+input_name = "code"
 ==
 <div class="container">
     <div class="page-header">
         <h1>Checkout</h1>
     </div>
-    {% component 'checkout' %}
+    <form data-request="{{ checkout ~ '::onSubmit' }}" data-request-flash>
+	<div class="row">
+		<div class="col-md-8 col-sm-6">
+			{% partial checkout ~ '::user-form' %}
+
+			{% partial checkout ~ '::shipping-form' %}
+		</div>
+
+		<div class="col-md-4 col-sm-6">
+		    {% component 'couponValidator' %}
+
+		    <div class="checkout-summary">
+				{% partial checkout ~ '::summary' %}
+		    </div>
+		</div>
+	</div>
+</form>
 </div>

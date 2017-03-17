@@ -1,3 +1,6 @@
 [submodule "plugins/octommerce/octommerce"]
 	path = plugins/octommerce/octommerce
 	url = https://github.com/octommerce/octommerce.git
+[submodule "plugins/octommerce/promo"]
+	path = plugins/octommerce/promo
+	url = https://github.com/octommerce/promo.git
